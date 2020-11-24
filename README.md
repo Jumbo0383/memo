@@ -1,9 +1,9 @@
 # 自分用メモ
 
 ## バージョン管理
-tensorflow2.3
-CUDA==10.1
-CuDNN==7.6.
+tensorflow2.3 <br>
+CUDA==10.1 <br>
+CuDNN==7.6.5 <br>
 
 ## CUDA再インストール
 Windowsの場合では，コントロールパネルから"cuda"と検索すると何種類かアプリケーションが出てくるので手動ですべて削除．<br>
@@ -19,5 +19,5 @@ zipファイルのダウンロード後にファイルを解凍．<br>
 CUDA/v10.1内に回答したファイルをコピペする．
 
 ## ReadTimeoutError が起きた場合
-> pip --default-timeout=100 install tensorflow-gpu==2.3.0
+> pip --default-timeout=100 install tensorflow-gpu==2.3.0 <br>
 でなんとかなる．
