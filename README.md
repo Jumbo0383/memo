@@ -17,3 +17,7 @@ https://developer.nvidia.com/cudnn <br>
 いくつか質問に答えた後で，CUDAとOSに対応するCuDNNのインストールを行う． <br>
 zipファイルのダウンロード後にファイルを解凍．<br>
 CUDA/v10.1内に回答したファイルをコピペする．
+
+## ReadTimeoutError が起きた場合
+> pip --default-timeout=100 install tensorflow-gpu==2.3.0
+でなんとかなる．
