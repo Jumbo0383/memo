@@ -20,4 +20,5 @@ CUDA/v10.1内に回答したファイルをコピペする．
 
 ## ReadTimeoutError が起きた場合
 > pip --default-timeout=100 install tensorflow-gpu==2.3.0 <br>
+
 でなんとかなる．
