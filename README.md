@@ -19,8 +19,7 @@ TF1.14.0ぐらいではCausal Convolutionが，TF2.1ぐらいではDilated Convo
 
 ## causal convolutionについて
 WaveNet等のCNNを用いた時系列処理では将来の情報を用いないようにするためにCausal Convolutionが使われています．実装上では前方向にパディングするだけでできます． <br>
-! <img src="./fig/causal.png" width="500"> ! <img src="./fig/causal2.png" width="500">
-
+ <img src="./fig/causal.png" width="300">  <img src="./fig/causal2.png" width="300">
 
 ## CUDA再インストール
 Windowsの場合では，コントロールパネルから"cuda"と検索すると何種類かアプリケーションが出てくるので手動ですべて削除．<br>
