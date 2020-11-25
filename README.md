@@ -20,9 +20,10 @@ TF1.14.0ぐらいではCausal Convolutionが，TF2.1ぐらいではDilated Convo
 ## causal convolutionについて
 CNNを用いる時に，入力系列と同じ長さの出力を得るためにパディングを行うことがよくあります(左図: パディングなし，右図: パディングあり)．<br>
 <img src="./fig/basic.png" width="250">  <img src="./fig/same.png" width="300"> <br>
-昨今ではWaveNetの登場以来RNNにとって代わってCNNで時系列処理をさせる研究が盛んですが，単純な畳み込みでは時系列の処理はできません．
+昨今ではWaveNetの登場以来，CNNで時系列処理をさせる研究が盛んですが，単純な畳み込みでは時系列の処理はできません．
 RNNと同様に過去の情報のみを用い，将来の情報を用いないようにするためにCausal Convolutionが使われています． <br>
 一見特殊な方法に見えますが，実装上では前方向にパディングするだけでできます． <br>
+通常の畳み込みでは両方向に(filter size-1)//2のゼロ埋めを行い，Causal Convolutionでは前方向に(filter size-1)のゼロ埋めを行っています． <br>
 <img src="./fig/causal.png" width="300"> &rArr; <img src="./fig/causal2.png" width="300">
 
 ## CUDA再インストール
