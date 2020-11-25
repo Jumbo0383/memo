@@ -22,3 +22,6 @@ CUDA/v10.1内に回答したファイルをコピペする．
 > pip --default-timeout=100 install tensorflow-gpu==2.3.0 <br>
 
 でなんとかなる．
+
+## Error code -9986 Internal PortAudio error
+pythonプログラムとGatageBandなどオーディオデバイスを用いる複数のアプリを立ち上げているとなるので，一旦両方のアプリを落としてPythonプログラムをもう一度開けなすと動くはずです
