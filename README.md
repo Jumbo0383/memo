@@ -23,7 +23,7 @@ CNNを用いる時に，入力系列と同じ長さの出力を得るために�
 昨今ではWaveNetの登場以来RNNにとって代わってCNNで時系列処理をさせる研究が盛んですが，単純な畳み込みでは時系列の処理はできません．
 RNNと同様に過去の情報のみを用い，将来の情報を用いないようにするためにCausal Convolutionが使われています． <br>
 一見特殊な方法に見えますが，実装上では前方向にパディングするだけでできます． <br>
-<img src="./fig/causal.png" width="300"> <img src="./fig/causal2.png" width="300">
+<img src="./fig/causal.png" width="300"> &rArr; <img src="./fig/causal2.png" width="300">
 
 ## CUDA再インストール
 Windowsの場合では，コントロールパネルから"cuda"と検索すると何種類かアプリケーションが出てくるので手動ですべて削除．<br>
