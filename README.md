@@ -18,8 +18,9 @@ Tensorflow(TF)1系とTF2系では，Define-and-run形式からDefine-by-run形�
 TF1.14.0ぐらいではCausal Convolutionが，TF2.1ぐらいではDilated Convolutionのtflite変換ができないです．そのため，TF2.3未満を使っている方でWaveNetのtflite化でエラーが出る方はTF2.3にアップデートすれば問題が解決するはずです．
 
 ## causal convolutionについて
+CNNを用いる時に，入力系列と同じ長さの出力を得るためにパディングを行うことがよくあります()．
 WaveNet等のCNNを用いた時系列処理では将来の情報を用いないようにするためにCausal Convolutionが使われています．実装上では前方向にパディングするだけでできます． <br>
-<img src="./fig/basic.png" width="300">  <img src="./fig/same.png" width="300">
+<img src="./fig/basic.png" width="200">  <img src="./fig/same.png" width="300"> <br>
 <img src="./fig/causal.png" width="300">  <img src="./fig/causal2.png" width="300">
 
 ## CUDA再インストール
